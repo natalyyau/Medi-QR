@@ -2,12 +2,14 @@ import { useState } from "react";
 import Question from "./questions";
 import { useNavigate } from "react-router-dom";
 
+// Generate Questionnare Questions
 const questions = [
   { id: "exercise", question: "How often do you exercise?", options: ["Daily", "Few times a week", "Rarely", "Never"] },
   { id: "diet", question: "How is your diet?", options: ["Healthy", "Moderate", "Unhealthy"] },
   { id: "smoking", question: "Do you smoke?", options: ["Yes", "No"] },
 ];
 
+// Determine User Answers to Questionnaire
 const Questionnaire = () => {
   const [answers, setAnswers] = useState({});
   const navigate = useNavigate();
@@ -16,17 +18,11 @@ const Questionnaire = () => {
     setAnswers((prev) => ({ ...prev, [questionId]: value }));
   };
 
-  const handleSubmit = async () => {
-    const response = await fetch("http://localhost:5000/predict", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(answers),
-    });
-
-    const result = await response.json();
-    navigate("/results", { state: { result } });
+  const handleSubmitAssessments = () => {
+    navigate("/results", {state: {answers }})
   };
-
+  
+// Generate Questionnaire page
   return (
     <div className="max-w-lg mx-auto p-4">
       {questions.map((q) => (
@@ -37,4 +33,5 @@ const Questionnaire = () => {
   );
 };
 
+// Move Answers to assessment.jsx
 export default Questionnaire;

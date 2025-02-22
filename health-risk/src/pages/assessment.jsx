@@ -1,4 +1,6 @@
+import React from "react";
 import Questionnaire from "../components/questionnaire";
+
 
 const Assessment = () => {
   return (
