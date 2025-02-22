@@ -1,0 +1,104 @@
+[33mcommit af3c96b75a670ebdcc6283295e4343b4d4d3d9b1[m[33m ([m[1;36mHEAD -> [m[1;32mzaid-integration[m[33m)[m
+Author: SiIentRiver <zhashmi7@gatech.edu>
+Date:   Sat Feb 22 02:00:55 2025 -0500
+
+    Added Front End: Recieving Backend JSON
+
+[33mcommit 582ebce454f297386ff849ec72053ac61285d509[m[33m ([m[1;31morigin/zaid-integration[m[33m, [m[1;31morigin/rose-css[m[33m, [m[1;31morigin/nataly-jsx[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: natalyyau <natalyyau1@gmail.com>
+Date:   Sat Feb 22 01:31:29 2025 -0500
+
+    refactor: move Results component to pages directory and update import path
+
+[33mcommit 50b080f5950b71332a5490a55783277593f393db[m[33m ([m[1;31morigin/zaid-main[m[33m, [m[1;32mh[m[33m, [m[1;32mget[m[33m)[m
+Author: natalyyau <natalyyau1@gmail.com>
+Date:   Sat Feb 22 00:44:11 2025 -0500
+
+    add react-router-dom dependency and implement health risk assessment form
+
+[33mcommit c2332dad8cbe5dd10db16090df5fe0d4759036e9[m
+Author: natalyyau <natalyyau1@gmail.com>
+Date:   Fri Feb 21 22:29:25 2025 -0500
+
+    update API endpoint in HealthRiskForm to use port 3000
+
+[33mcommit af547d430d4d864a89ecc1ac4c75fd35edf92cb2[m
+Author: natalyyau <natalyyau1@gmail.com>
+Date:   Fri Feb 21 22:27:47 2025 -0500
+
+    add package.json and update dependencies; include type definitions and ESLint configurations
+
+[33mcommit 53ec5ee1d005b73457282c6f4e8823df9fbbe1af[m
+Author: Tahia <140080069+NotCheery@users.noreply.github.com>
+Date:   Fri Feb 21 22:13:35 2025 -0500
+
+    fixed backend
+
+[33mcommit e319e548118cc5858678f233ba51c9da3bf7cb92[m
+Merge: 026880a 0d3e2f6
+Author: natalyyau <natalyyau1@gmail.com>
+Date:   Fri Feb 21 22:08:19 2025 -0500
+
+    Merge branch 'main' of https://github.com/natalyyau/Medi-QR
+
+[33mcommit 026880a0039f13efd676ff5aa44675c6ffbc2137[m
+Author: natalyyau <natalyyau1@gmail.com>
+Date:   Fri Feb 21 22:08:15 2025 -0500
+
+    set up React application with Vite, add health risk assessment form, and configure ESLint
+
+[33mcommit 0d3e2f653ac296ef22ad50ed53872363d19c65fa[m
+Author: Tahia <140080069+NotCheery@users.noreply.github.com>
+Date:   Fri Feb 21 21:41:06 2025 -0500
+
+    server file
+
+[33mcommit 05682b716772414d72701f658c37c5de2e498d73[m
+Merge: ecd9ac3 ce8ff14
+Author: Tahia <140080069+NotCheery@users.noreply.github.com>
+Date:   Fri Feb 21 21:39:20 2025 -0500
+
+    Merge branch 'main' of https://github.com/natalyyau/Medi-QR
+
+[33mcommit ecd9ac3d9a7f613b1aaa30a9516ef9561aa4c3fd[m
+Author: Tahia <140080069+NotCheery@users.noreply.github.com>
+Date:   Fri Feb 21 21:39:05 2025 -0500
+
+    backend works
+
+[33mcommit ce8ff14104bd8c5b81e6b8e851a6a62b9637492b[m
+Author: natalyyau <natalyyau1@gmail.com>
+Date:   Fri Feb 21 21:38:09 2025 -0500
+
+    add initial React component file
+
+[33mcommit b5a65b2dca9a156cd538c7d727dd72a5a44434bc[m
+Merge: 6db9f3b f417c6f
+Author: natalyyau <natalyyau1@gmail.com>
+Date:   Fri Feb 21 21:32:43 2025 -0500
+
+    Merge branch 'main' of https://github.com/natalyyau/Medi-QR
+
+[33mcommit 6db9f3b35e4900cace57082add32f3f31e0be0ee[m
+Author: natalyyau <natalyyau1@gmail.com>
+Date:   Fri Feb 21 21:28:34 2025 -0500
+
+    initialize backend structure with Express and add initial files
+
+[33mcommit f417c6ffbc26c4c5f5f9c12440d9540514b20e96[m
+Author: Tahia <140080069+NotCheery@users.noreply.github.com>
+Date:   Fri Feb 21 20:59:56 2025 -0500
+
+    added gitignore file
+
+[33mcommit 14fc5085f1fa9b4646ced46cf30ecaffb425cd81[m
+Author: Tahia <140080069+NotCheery@users.noreply.github.com>
+Date:   Fri Feb 21 19:39:04 2025 -0500
+
+    Installed node packages
+
+[33mcommit 176c49afc462690260d85839fe929b96df58ea4f[m
+Author: natalyyau <natalyyau1@gmail.com>
+Date:   Fri Feb 21 18:19:34 2025 -0500
+
+    Initial commit
