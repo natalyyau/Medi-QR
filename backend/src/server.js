@@ -1,7 +1,11 @@
 // created backend directory, installed express for backend API
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const port = 3000;
+
+// Enable CORS for cross-origin requests (important for development)
+app.use(cors());
 
 app.use(express.json()); //middleware to parse JSON requirements
 
