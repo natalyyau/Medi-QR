@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../components/questions.css";
 
 const Question = ({ question, options, onSelect }) => {
   const [selected, setSelected] = useState(null);

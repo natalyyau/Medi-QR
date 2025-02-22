@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Question from "./questions";
 import { useNavigate } from "react-router-dom";
+import "../components/questionnaire.css"; // Import CSS file
 
 const questions = [
   { id: "exercise", question: "How often do you exercise?", options: ["Daily", "Few times a week", "Rarely", "Never"] },
@@ -28,11 +29,17 @@ const Questionnaire = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto p-4">
-      {questions.map((q) => (
-        <Question key={q.id} question={q.question} options={q.options} onSelect={(value) => handleSelect(q.id, value)} />
-      ))}
-      <button onClick={handleSubmit} className="mt-4 bg-blue-500 text-white p-2 rounded">Submit</button>
+    <div className="page-wrapper"> {/* Wrapper for full-page centering */}
+      <div className="questionnaire-container">
+        <h2 className="text-2xl font-bold">Health Risk Assessment</h2>
+        <p className="mt-2">Please answer the following questions:</p>
+        
+        {questions.map((q) => (
+          <Question key={q.id} question={q.question} options={q.options} onSelect={(value) => handleSelect(q.id, value)} />
+        ))}
+
+        <button onClick={handleSubmit} className="submit-btn">Submit</button>
+      </div>
     </div>
   );
 };

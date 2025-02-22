@@ -1,4 +1,6 @@
 import Questionnaire from "../components/questionnaire";
+import "../pages/Assessment.css";
+
 
 const Assessment = () => {
   return (
