@@ -2,6 +2,7 @@
 
 # Important
 Note that submit button only works if you are running both the backend and the frontend.
+I think you will have to run the frontend first, and then backend.
 Make sure you're in the correct directory for it to work, by following the instructions below
 
 To find specific directories, open Medi-OR folder and navigate to App.jsx
