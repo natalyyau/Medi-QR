@@ -11,6 +11,7 @@ const questions = [
 
 const Questionnaire = () => {
   const [answers, setAnswers] = useState({});
+  const [error, setError] = useState(null); //We can use this to throw errors (might delete if unused) - Tahia
   const navigate = useNavigate();
 
   const handleSelect = (questionId, value) => {
@@ -18,7 +19,9 @@ const Questionnaire = () => {
   };
 
   const handleSubmit = async () => {
-    const response = await fetch("http://localhost:5000/predict", {
+
+    // Change url for fetch - Tahia
+    const response = await fetch("http://localhost:3000/api/assess", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(answers),

@@ -5,25 +5,24 @@ const app = express();
 const port = 3000;
 
 // Enable CORS for cross-origin requests (important for development)
-app.use(cors());
-
+app.use(cors());// When handling form submission
 app.use(express.json()); //middleware to parse JSON requirements
 
 app.post("/api/assess", (req, res) => {
     const { exercise, diet, smoking } = req.body;
 
 
-// Logic for risk assessment
-let riskLevel = "Moderate";
+    // Logic for risk assessment
+    let riskLevel = "Moderate";
 
-if (diet === "Unhealthy" && smoking === "Yes") {
-    riskLevel = "High"
-} else if (diet == "Healthy" && exercise === "Yes") {
-    riskLevel = "Low"
-}
+    if (diet === "Unhealthy" && smoking === "Yes") {
+        riskLevel = "High"
+    } else if (diet == "Healthy" && exercise === "Yes") {
+        riskLevel = "Low"
+    }
 
-// Send response back to frontend
-res.json({ riskLevel });
+    // Send response back to frontend
+    res.json({ riskLevel });
 });
 
 app.get('/', (req, res) => {
