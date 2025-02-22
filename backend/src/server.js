@@ -3,12 +3,12 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const port = 3000;
-
 // Enable CORS for cross-origin requests (important for development)
 app.use(cors());
 
 app.use(express.json()); //middleware to parse JSON requirements
 
+// Recieve Questionare Data from Front end
 app.post("/api/assess", (req, res) => {
     const { exercise, diet, smoking } = req.body;
 
@@ -21,13 +21,14 @@ if (diet === "Unhealthy" && smoking === "Yes") {
 } else if (diet == "Healthy" && exercise === "Yes") {
     riskLevel = "Low"
 }
-
-// Send response back to frontend
-res.json({ riskLevel });
 });
 
+// Send Response back to Frontend
 app.get('/', (req, res) => {
     res.send('AI Health Risk Assessment Tool - Backend is working!');
+});
+app.get("/api", (req, res) => {
+    res.json({ riskLevel });
 });
 
 app.listen(port, () => {
